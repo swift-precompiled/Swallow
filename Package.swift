@@ -44,7 +44,7 @@ let package = Package(
             exact: "1.6.0"
         ),
         .package(
-            url: "https://github.com/swift-precompiled/swift-syntax",
+            url: "https://github.com/swift-precompiled/swift-syntax.git",
             exact: "603.0.2"
         )
     ],
@@ -184,25 +184,6 @@ let package = Package(
         ),
         .macro(
             name: "ErrorXMacros",
-            dependencies: [
-                .product(
-                    name: "SwiftSyntax",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftSyntaxMacros",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParserDiagnostics",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftCompilerPlugin",
-                    package: "swift-syntax"
-                ),
-                "SwiftSyntaxUtilities_Aggregation"
-            ],
             path: "Macros/ErrorXMacros"
         ),
         .target(
@@ -231,8 +212,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "FoundationX",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/FoundationX-792406d0d62bc35388eb7674941024c9c3aa7c05490ba40371869685a8b5f0b1.xcframework.zip",
-            checksum: "792406d0d62bc35388eb7674941024c9c3aa7c05490ba40371869685a8b5f0b1"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/FoundationX-882c7a7e34b9e10c0644e9e8fb0ff7f89775880e05b2110f1dd74d363f426b98.xcframework.zip",
+            checksum: "882c7a7e34b9e10c0644e9e8fb0ff7f89775880e05b2110f1dd74d363f426b98"
         ),
         .target(
             name: "POSIX_Aggregation",
@@ -291,25 +272,6 @@ let package = Package(
         ),
         .macro(
             name: "SwallowMacros",
-            dependencies: [
-                .product(
-                    name: "SwiftSyntax",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftSyntaxMacros",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParserDiagnostics",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftCompilerPlugin",
-                    package: "swift-syntax"
-                ),
-                "SwiftSyntaxUtilities_Aggregation"
-            ],
             path: "Macros/SwallowMacros"
         ),
         .target(
@@ -357,8 +319,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "MacroBuilder",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/MacroBuilder-bf88aeb895cc03cab59ceac8c71f4a4eb652186069d2b7d6a16e968bb4c5a037.xcframework.zip",
-            checksum: "bf88aeb895cc03cab59ceac8c71f4a4eb652186069d2b7d6a16e968bb4c5a037"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/MacroBuilder-81866a76e748f73d758d1751a92ff3fdbbda8e0bab85f14de3dc11da2b2b7611.xcframework.zip",
+            checksum: "81866a76e748f73d758d1751a92ff3fdbbda8e0bab85f14de3dc11da2b2b7611"
         ),
         .target(
             name: "SwiftSyntaxUtilities_Aggregation",
@@ -394,8 +356,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SwiftSyntaxUtilities",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/SwiftSyntaxUtilities-f97c31b8533e4f8f10d02b497db36b5ca4f0ed838eaa42653b13f2e0d38bfa15.xcframework.zip",
-            checksum: "f97c31b8533e4f8f10d02b497db36b5ca4f0ed838eaa42653b13f2e0d38bfa15"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/SwiftSyntaxUtilities-8e804f705a68b98991c504853b36ea627c6bedaf47a83106ecf958a14140411e.xcframework.zip",
+            checksum: "8e804f705a68b98991c504853b36ea627c6bedaf47a83106ecf958a14140411e"
         ),
         .target(
             name: "Swallow_PrecompiledProduct",
