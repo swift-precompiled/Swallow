@@ -259,31 +259,6 @@ let package = Package(
                 "Diagnostics_Aggregation",
                 "ErrorX_Aggregation",
                 "ErrorXMacros",
-                .product(
-                    name: "SwiftSyntax",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftSyntaxMacros",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParserDiagnostics",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftCompilerPlugin",
-                    package: "swift-syntax"
-                ),
-                "SwiftSyntaxUtilities_Aggregation",
-                .product(
-                    name: "SwiftSyntaxBuilder",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParser",
-                    package: "swift-syntax"
-                ),
                 "SwallowMacrosClient_Aggregation",
                 "SwallowMacros",
                 "CoreModel_Aggregation",
@@ -302,31 +277,6 @@ let package = Package(
             dependencies: [
                 "SwallowMacrosClient_Aggregation",
                 "SwallowMacros",
-                .product(
-                    name: "SwiftSyntax",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftSyntaxMacros",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParserDiagnostics",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftCompilerPlugin",
-                    package: "swift-syntax"
-                ),
-                "SwiftSyntaxUtilities_Aggregation",
-                .product(
-                    name: "SwiftSyntaxBuilder",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParser",
-                    package: "swift-syntax"
-                ),
                 "Swallow_Aggregation",
                 .product(
                     name: "Collections",
@@ -346,31 +296,6 @@ let package = Package(
             dependencies: [
                 "ErrorX_Aggregation",
                 "ErrorXMacros",
-                .product(
-                    name: "SwiftSyntax",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftSyntaxMacros",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParserDiagnostics",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftCompilerPlugin",
-                    package: "swift-syntax"
-                ),
-                "SwiftSyntaxUtilities_Aggregation",
-                .product(
-                    name: "SwiftSyntaxBuilder",
-                    package: "swift-syntax"
-                ),
-                .product(
-                    name: "SwiftParser",
-                    package: "swift-syntax"
-                ),
                 "Swallow_Aggregation",
                 .product(
                     name: "Collections",
