@@ -67,16 +67,18 @@ let package = Package(
     targets: [
         .target(
             name: "_SwiftRuntimeExports_Aggregation",
-            dependencies: ["_SwiftRuntimeExports"]
+            dependencies: ["_SwiftRuntimeExports"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "_SwiftRuntimeExports",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/_SwiftRuntimeExports-22e86595e07376a53a49e92c2cd9cb09b85c34759f33d830cf92d92ebf9acd59.xcframework.zip",
-            checksum: "22e86595e07376a53a49e92c2cd9cb09b85c34759f33d830cf92d92ebf9acd59"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/_SwiftRuntimeExports-376b166c99849b370fa113d5e4713f17dd58138a2500717fd2fa19c61eb7383f.xcframework.zip",
+            checksum: "376b166c99849b370fa113d5e4713f17dd58138a2500717fd2fa19c61eb7383f"
         ),
         .target(
             name: "_PythonString_Aggregation",
-            dependencies: ["_PythonString"]
+            dependencies: ["_PythonString"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "_PythonString",
@@ -95,16 +97,18 @@ let package = Package(
                     name: "OrderedCollections",
                     package: "swift-collections"
                 )
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "_SwallowSwiftOverlay",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/_SwallowSwiftOverlay-01ed25e39d5fc0931a98295741430efc09e410498d1daccdf402c1b25528cf0f.xcframework.zip",
-            checksum: "01ed25e39d5fc0931a98295741430efc09e410498d1daccdf402c1b25528cf0f"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/_SwallowSwiftOverlay-8c7678e7a0aa01179a63d2e01c3d30826dca3d05980db5b8036a534cc5c3b2f1.xcframework.zip",
+            checksum: "8c7678e7a0aa01179a63d2e01c3d30826dca3d05980db5b8036a534cc5c3b2f1"
         ),
         .target(
             name: "LoremIpsum_Aggregation",
-            dependencies: ["LoremIpsum"]
+            dependencies: ["LoremIpsum"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "LoremIpsum",
@@ -113,12 +117,13 @@ let package = Package(
         ),
         .target(
             name: "SE0270_RangeSet_Aggregation",
-            dependencies: ["SE0270_RangeSet"]
+            dependencies: ["SE0270_RangeSet"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "SE0270_RangeSet",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/SE0270_RangeSet-27dd8cb593b08b991b7551b57ca6fc22b495c625350ae5414d7a1cbde471e6c0.xcframework.zip",
-            checksum: "27dd8cb593b08b991b7551b57ca6fc22b495c625350ae5414d7a1cbde471e6c0"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/SE0270_RangeSet-bfe0aa4421a7c84fb9d92143bcab79e6c5c6cf0edceda03720af4f79990f55ae.xcframework.zip",
+            checksum: "bfe0aa4421a7c84fb9d92143bcab79e6c5c6cf0edceda03720af4f79990f55ae"
         ),
         .target(
             name: "Swallow_Aggregation",
@@ -135,12 +140,13 @@ let package = Package(
                 "_RuntimeC_Aggregation",
                 "_SwallowSwiftOverlay_Aggregation",
                 "_SwiftRuntimeExports_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Swallow",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/Swallow-230edeb64a3ee4555cd5e149126b9f4e0991bbd37134e6de2ff6a14200936e99.xcframework.zip",
-            checksum: "230edeb64a3ee4555cd5e149126b9f4e0991bbd37134e6de2ff6a14200936e99"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/Swallow-be4c0381c59e747cead52cabc27106a036893ef532f9d93a52722f1d8405ea9e.xcframework.zip",
+            checksum: "be4c0381c59e747cead52cabc27106a036893ef532f9d93a52722f1d8405ea9e"
         ),
         .target(
             name: "Compute_Aggregation",
@@ -152,12 +158,13 @@ let package = Package(
                     package: "swift-collections"
                 ),
                 "Swallow_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Compute",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/Compute-55e124d0aa797a08b634475b1ddb31eb31b905e7a77e5474ba92022139daeb37.xcframework.zip",
-            checksum: "55e124d0aa797a08b634475b1ddb31eb31b905e7a77e5474ba92022139daeb37"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/Compute-2fdb4ed2218e624c919e69833853049c87d5338df2877f5c663f22093856f919.xcframework.zip",
+            checksum: "2fdb4ed2218e624c919e69833853049c87d5338df2877f5c663f22093856f919"
         ),
         .target(
             name: "CoreModel_Aggregation",
@@ -169,12 +176,13 @@ let package = Package(
                     package: "swift-collections"
                 ),
                 "Swallow_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "CoreModel",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/CoreModel-8ec1741d60c5cafa00cbb2ae6500f509b498b4895c95b5f2be1ed6a4782baef1.xcframework.zip",
-            checksum: "8ec1741d60c5cafa00cbb2ae6500f509b498b4895c95b5f2be1ed6a4782baef1"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/CoreModel-bed5da7f207fe0da5d574f2b7b66db2746dd907ca36f959f02437fc5e085bac2.xcframework.zip",
+            checksum: "bed5da7f207fe0da5d574f2b7b66db2746dd907ca36f959f02437fc5e085bac2"
         ),
         .target(
             name: "ErrorX_Aggregation",
@@ -182,7 +190,8 @@ let package = Package(
                 "ErrorX",
                 "ErrorXMacros",
                 "Swallow_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "ErrorX",
@@ -200,7 +209,8 @@ let package = Package(
                 "ErrorX_Aggregation",
                 "Swallow_Aggregation",
                 "SwallowMacrosClient_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Diagnostics",
@@ -213,12 +223,13 @@ let package = Package(
                 "FoundationX",
                 "Diagnostics_Aggregation",
                 "Swallow_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "FoundationX",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/FoundationX-3250b28486ea8f817b714f39db0a301ce2bc1eeed034ac2eb702a5a29ffd45e6.xcframework.zip",
-            checksum: "3250b28486ea8f817b714f39db0a301ce2bc1eeed034ac2eb702a5a29ffd45e6"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/FoundationX-645495320b0321f1131269a6b137141cfa730ec984498465c57a4a098ab6f618.xcframework.zip",
+            checksum: "645495320b0321f1131269a6b137141cfa730ec984498465c57a4a098ab6f618"
         ),
         .target(
             name: "POSIX_Aggregation",
@@ -226,7 +237,8 @@ let package = Package(
                 "POSIX",
                 "Swallow_Aggregation",
                 "SwallowMacrosClient_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "POSIX",
@@ -235,7 +247,8 @@ let package = Package(
         ),
         .target(
             name: "_RuntimeC_Aggregation",
-            dependencies: ["_RuntimeC"]
+            dependencies: ["_RuntimeC"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "_RuntimeC",
@@ -244,12 +257,13 @@ let package = Package(
         ),
         .target(
             name: "_RuntimeKeyPath_Aggregation",
-            dependencies: ["_RuntimeKeyPath", "Swallow_Aggregation"]
+            dependencies: ["_RuntimeKeyPath", "Swallow_Aggregation"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "_RuntimeKeyPath",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/_RuntimeKeyPath-1fdddbbe72f14faa1b7bd10094ddc6d0fab6297ec11c49c2c683160bae7fe186.xcframework.zip",
-            checksum: "1fdddbbe72f14faa1b7bd10094ddc6d0fab6297ec11c49c2c683160bae7fe186"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/_RuntimeKeyPath-390d864b85bf467601e6f008a9aec9c3bbc6c728bb5ac0a6a4ccc462bdbda64f.xcframework.zip",
+            checksum: "390d864b85bf467601e6f008a9aec9c3bbc6c728bb5ac0a6a4ccc462bdbda64f"
         ),
         .target(
             name: "Runtime_Aggregation",
@@ -264,7 +278,8 @@ let package = Package(
                 "Compute_Aggregation",
                 "FoundationX_Aggregation",
                 "Swallow_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Runtime",
@@ -281,12 +296,13 @@ let package = Package(
                 "SwallowMacrosClient",
                 "SwallowMacros",
                 "Swallow_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "SwallowMacrosClient",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/SwallowMacrosClient-ee9f3d6ccd48c622226f30b51303494621620fb35c1a5fcce76cbac6a82cbbbf.xcframework.zip",
-            checksum: "ee9f3d6ccd48c622226f30b51303494621620fb35c1a5fcce76cbac6a82cbbbf"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/SwallowMacrosClient-a6a8fff31bbd26a40e479c7e0a0661a0335356402c338b8e8116c706123bb9fe.xcframework.zip",
+            checksum: "a6a8fff31bbd26a40e479c7e0a0661a0335356402c338b8e8116c706123bb9fe"
         ),
         .target(
             name: "MacroBuilder_Aggregation",
@@ -314,12 +330,13 @@ let package = Package(
                     package: "swift-syntax"
                 ),
                 "SwiftSyntaxUtilities_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "MacroBuilder",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/MacroBuilder-33f5bf0d0147c74b14f3b1e6eba710e9c2f9187c1d2c2f18988fefd74314c8e8.xcframework.zip",
-            checksum: "33f5bf0d0147c74b14f3b1e6eba710e9c2f9187c1d2c2f18988fefd74314c8e8"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/MacroBuilder-bcd04870a760c0c9a07b5630caf4564f67996ad408d40d9a0bbfd1e07b7375e5.xcframework.zip",
+            checksum: "bcd04870a760c0c9a07b5630caf4564f67996ad408d40d9a0bbfd1e07b7375e5"
         ),
         .target(
             name: "SwiftSyntaxUtilities_Aggregation",
@@ -350,12 +367,13 @@ let package = Package(
                     package: "swift-syntax"
                 ),
                 "Swallow_Aggregation"
-            ]
+            ],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "SwiftSyntaxUtilities",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/SwiftSyntaxUtilities-396dfc3381c826678e6532cf9ffca5896e5f937be60b0a79d34b1b0ac4843dfc.xcframework.zip",
-            checksum: "396dfc3381c826678e6532cf9ffca5896e5f937be60b0a79d34b1b0ac4843dfc"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-7a1b723dcdad1a288b9152492c84178817674327/SwiftSyntaxUtilities-8114c661fb6d944068720d47d95c33025d38f7b0258c638f607dacac5e84012c.xcframework.zip",
+            checksum: "8114c661fb6d944068720d47d95c33025d38f7b0258c638f607dacac5e84012c"
         )
     ]
 )
