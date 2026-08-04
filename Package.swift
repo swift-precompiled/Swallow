@@ -71,17 +71,7 @@ let package = Package(
         ),
         .target(
             name: "_SwallowSwiftOverlay_Aggregation",
-            dependencies: [
-                "_SwallowSwiftOverlay",
-                .product(
-                    name: "Collections",
-                    package: "swift-collections"
-                ),
-                .product(
-                    name: "OrderedCollections",
-                    package: "swift-collections"
-                )
-            ],
+            dependencies: ["_SwallowSwiftOverlay"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -111,38 +101,17 @@ let package = Package(
         ),
         .target(
             name: "Swallow_Aggregation",
-            dependencies: [
-                "Swallow",
-                .product(
-                    name: "Collections",
-                    package: "swift-collections"
-                ),
-                .product(
-                    name: "OrderedCollections",
-                    package: "swift-collections"
-                ),
-                "_RuntimeC_Aggregation",
-                "_SwallowSwiftOverlay_Aggregation",
-                "_SwiftRuntimeExports_Aggregation"
-            ],
+            dependencies: ["Swallow"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "Swallow",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/Swallow-72ac2a390e5399d08954c08704fd712a773b82b93eb7edcaa84fb9f89b3a9a20.xcframework.zip",
-            checksum: "72ac2a390e5399d08954c08704fd712a773b82b93eb7edcaa84fb9f89b3a9a20"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/Swallow-f761cecd38876dd9ec84277e7bf388c41e7330ca9ca859d4ef0362a1c1f70526.xcframework.zip",
+            checksum: "f761cecd38876dd9ec84277e7bf388c41e7330ca9ca859d4ef0362a1c1f70526"
         ),
         .target(
             name: "Compute_Aggregation",
-            dependencies: [
-                "Compute",
-                "Diagnostics_Aggregation",
-                .product(
-                    name: "Collections",
-                    package: "swift-collections"
-                ),
-                "Swallow_Aggregation"
-            ],
+            dependencies: ["Compute"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -152,15 +121,7 @@ let package = Package(
         ),
         .target(
             name: "CoreModel_Aggregation",
-            dependencies: [
-                "CoreModel",
-                "Diagnostics_Aggregation",
-                .product(
-                    name: "Collections",
-                    package: "swift-collections"
-                ),
-                "Swallow_Aggregation"
-            ],
+            dependencies: ["CoreModel"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -170,11 +131,7 @@ let package = Package(
         ),
         .target(
             name: "ErrorX_Aggregation",
-            dependencies: [
-                "ErrorX",
-                "ErrorXMacros",
-                "Swallow_Aggregation"
-            ],
+            dependencies: ["ErrorX"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -188,12 +145,7 @@ let package = Package(
         ),
         .target(
             name: "Diagnostics_Aggregation",
-            dependencies: [
-                "Diagnostics",
-                "ErrorX_Aggregation",
-                "Swallow_Aggregation",
-                "SwallowMacrosClient_Aggregation"
-            ],
+            dependencies: ["Diagnostics"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -203,25 +155,17 @@ let package = Package(
         ),
         .target(
             name: "FoundationX_Aggregation",
-            dependencies: [
-                "FoundationX",
-                "Diagnostics_Aggregation",
-                "Swallow_Aggregation"
-            ],
+            dependencies: ["FoundationX"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
             name: "FoundationX",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/FoundationX-882c7a7e34b9e10c0644e9e8fb0ff7f89775880e05b2110f1dd74d363f426b98.xcframework.zip",
-            checksum: "882c7a7e34b9e10c0644e9e8fb0ff7f89775880e05b2110f1dd74d363f426b98"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/FoundationX-ed504e49b02844477f33c6b1ded693cd856e3129c47df2feb884b52b6eea84cb.xcframework.zip",
+            checksum: "ed504e49b02844477f33c6b1ded693cd856e3129c47df2feb884b52b6eea84cb"
         ),
         .target(
             name: "POSIX_Aggregation",
-            dependencies: [
-                "POSIX",
-                "Swallow_Aggregation",
-                "SwallowMacrosClient_Aggregation"
-            ],
+            dependencies: ["POSIX"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -241,7 +185,7 @@ let package = Package(
         ),
         .target(
             name: "_RuntimeKeyPath_Aggregation",
-            dependencies: ["_RuntimeKeyPath", "Swallow_Aggregation"],
+            dependencies: ["_RuntimeKeyPath"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -251,18 +195,7 @@ let package = Package(
         ),
         .target(
             name: "Runtime_Aggregation",
-            dependencies: [
-                "Runtime",
-                .product(
-                    name: "Atomics",
-                    package: "swift-atomics"
-                ),
-                "_RuntimeC_Aggregation",
-                "_RuntimeKeyPath_Aggregation",
-                "Compute_Aggregation",
-                "FoundationX_Aggregation",
-                "Swallow_Aggregation"
-            ],
+            dependencies: ["Runtime"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -276,11 +209,7 @@ let package = Package(
         ),
         .target(
             name: "SwallowMacrosClient_Aggregation",
-            dependencies: [
-                "SwallowMacrosClient",
-                "SwallowMacros",
-                "Swallow_Aggregation"
-            ],
+            dependencies: ["SwallowMacrosClient"],
             swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
         ),
         .binaryTarget(
@@ -290,9 +219,188 @@ let package = Package(
         ),
         .target(
             name: "MacroBuilder_Aggregation",
+            dependencies: ["MacroBuilder"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
+        ),
+        .binaryTarget(
+            name: "MacroBuilder",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/MacroBuilder-81866a76e748f73d758d1751a92ff3fdbbda8e0bab85f14de3dc11da2b2b7611.xcframework.zip",
+            checksum: "81866a76e748f73d758d1751a92ff3fdbbda8e0bab85f14de3dc11da2b2b7611"
+        ),
+        .target(
+            name: "SwiftSyntaxUtilities_Aggregation",
+            dependencies: ["SwiftSyntaxUtilities"],
+            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
+        ),
+        .binaryTarget(
+            name: "SwiftSyntaxUtilities",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/SwiftSyntaxUtilities-8e804f705a68b98991c504853b36ea627c6bedaf47a83106ecf958a14140411e.xcframework.zip",
+            checksum: "8e804f705a68b98991c504853b36ea627c6bedaf47a83106ecf958a14140411e"
+        ),
+        .target(
+            name: "Swallow_PrecompiledProduct",
             dependencies: [
-                "MacroBuilder",
+                "_PythonString_Aggregation",
+                "_RuntimeC_Aggregation",
+                "_RuntimeKeyPath_Aggregation",
                 "Swallow_Aggregation",
+                .product(
+                    name: "Collections",
+                    package: "swift-collections"
+                ),
+                .product(
+                    name: "OrderedCollections",
+                    package: "swift-collections"
+                ),
+                "_SwallowSwiftOverlay_Aggregation",
+                "_SwiftRuntimeExports_Aggregation",
+                "SE0270_RangeSet_Aggregation",
+                "Compute_Aggregation",
+                "Diagnostics_Aggregation",
+                "ErrorX_Aggregation",
+                "ErrorXMacros",
+                .product(
+                    name: "SwiftSyntax",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftSyntaxMacros",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftParserDiagnostics",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftCompilerPlugin",
+                    package: "swift-syntax"
+                ),
+                "SwiftSyntaxUtilities_Aggregation",
+                .product(
+                    name: "SwiftSyntaxBuilder",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftParser",
+                    package: "swift-syntax"
+                ),
+                "SwallowMacrosClient_Aggregation",
+                "SwallowMacros",
+                "CoreModel_Aggregation",
+                "FoundationX_Aggregation",
+                "LoremIpsum_Aggregation",
+                "POSIX_Aggregation",
+                "Runtime_Aggregation",
+                .product(
+                    name: "Atomics",
+                    package: "swift-atomics"
+                )
+            ]
+        ),
+        .target(
+            name: "SwallowMacrosClient_PrecompiledProduct",
+            dependencies: [
+                "SwallowMacrosClient_Aggregation",
+                "SwallowMacros",
+                .product(
+                    name: "SwiftSyntax",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftSyntaxMacros",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftParserDiagnostics",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftCompilerPlugin",
+                    package: "swift-syntax"
+                ),
+                "SwiftSyntaxUtilities_Aggregation",
+                .product(
+                    name: "SwiftSyntaxBuilder",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftParser",
+                    package: "swift-syntax"
+                ),
+                "Swallow_Aggregation",
+                .product(
+                    name: "Collections",
+                    package: "swift-collections"
+                ),
+                .product(
+                    name: "OrderedCollections",
+                    package: "swift-collections"
+                ),
+                "_RuntimeC_Aggregation",
+                "_SwallowSwiftOverlay_Aggregation",
+                "_SwiftRuntimeExports_Aggregation"
+            ]
+        ),
+        .target(
+            name: "ErrorX_PrecompiledProduct",
+            dependencies: [
+                "ErrorX_Aggregation",
+                "ErrorXMacros",
+                .product(
+                    name: "SwiftSyntax",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftSyntaxMacros",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftParserDiagnostics",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftCompilerPlugin",
+                    package: "swift-syntax"
+                ),
+                "SwiftSyntaxUtilities_Aggregation",
+                .product(
+                    name: "SwiftSyntaxBuilder",
+                    package: "swift-syntax"
+                ),
+                .product(
+                    name: "SwiftParser",
+                    package: "swift-syntax"
+                ),
+                "Swallow_Aggregation",
+                .product(
+                    name: "Collections",
+                    package: "swift-collections"
+                ),
+                .product(
+                    name: "OrderedCollections",
+                    package: "swift-collections"
+                ),
+                "_RuntimeC_Aggregation",
+                "_SwallowSwiftOverlay_Aggregation",
+                "_SwiftRuntimeExports_Aggregation"
+            ]
+        ),
+        .target(
+            name: "MacroBuilder_PrecompiledProduct",
+            dependencies: [
+                "MacroBuilder_Aggregation",
+                "Swallow_Aggregation",
+                .product(
+                    name: "Collections",
+                    package: "swift-collections"
+                ),
+                .product(
+                    name: "OrderedCollections",
+                    package: "swift-collections"
+                ),
+                "_RuntimeC_Aggregation",
+                "_SwallowSwiftOverlay_Aggregation",
+                "_SwiftRuntimeExports_Aggregation",
                 .product(
                     name: "SwiftCompilerPlugin",
                     package: "swift-syntax"
@@ -313,19 +421,17 @@ let package = Package(
                     name: "SwiftParserDiagnostics",
                     package: "swift-syntax"
                 ),
-                "SwiftSyntaxUtilities_Aggregation"
-            ],
-            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
-        ),
-        .binaryTarget(
-            name: "MacroBuilder",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/MacroBuilder-81866a76e748f73d758d1751a92ff3fdbbda8e0bab85f14de3dc11da2b2b7611.xcframework.zip",
-            checksum: "81866a76e748f73d758d1751a92ff3fdbbda8e0bab85f14de3dc11da2b2b7611"
+                "SwiftSyntaxUtilities_Aggregation",
+                .product(
+                    name: "SwiftParser",
+                    package: "swift-syntax"
+                )
+            ]
         ),
         .target(
-            name: "SwiftSyntaxUtilities_Aggregation",
+            name: "SwiftSyntaxUtilities_PrecompiledProduct",
             dependencies: [
-                "SwiftSyntaxUtilities",
+                "SwiftSyntaxUtilities_Aggregation",
                 .product(
                     name: "SwiftCompilerPlugin",
                     package: "swift-syntax"
@@ -350,50 +456,19 @@ let package = Package(
                     name: "SwiftParserDiagnostics",
                     package: "swift-syntax"
                 ),
-                "Swallow_Aggregation"
-            ],
-            swiftSettings: [.define("SCIPIO_PRECOMPILED_BINARY_WRAPPER")]
-        ),
-        .binaryTarget(
-            name: "SwiftSyntaxUtilities",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-6ba39ad9dd35a4f092ffa9cbb69723c4c628bfb3/SwiftSyntaxUtilities-8e804f705a68b98991c504853b36ea627c6bedaf47a83106ecf958a14140411e.xcframework.zip",
-            checksum: "8e804f705a68b98991c504853b36ea627c6bedaf47a83106ecf958a14140411e"
-        ),
-        .target(
-            name: "Swallow_PrecompiledProduct",
-            dependencies: [
-                "_PythonString_Aggregation",
-                "_RuntimeC_Aggregation",
-                "_RuntimeKeyPath_Aggregation",
-                "_SwallowSwiftOverlay_Aggregation",
-                "_SwiftRuntimeExports_Aggregation",
-                "SE0270_RangeSet_Aggregation",
                 "Swallow_Aggregation",
-                "Compute_Aggregation",
-                "CoreModel_Aggregation",
-                "Diagnostics_Aggregation",
-                "ErrorX_Aggregation",
-                "FoundationX_Aggregation",
-                "LoremIpsum_Aggregation",
-                "POSIX_Aggregation",
-                "Runtime_Aggregation"
+                .product(
+                    name: "Collections",
+                    package: "swift-collections"
+                ),
+                .product(
+                    name: "OrderedCollections",
+                    package: "swift-collections"
+                ),
+                "_RuntimeC_Aggregation",
+                "_SwallowSwiftOverlay_Aggregation",
+                "_SwiftRuntimeExports_Aggregation"
             ]
-        ),
-        .target(
-            name: "SwallowMacrosClient_PrecompiledProduct",
-            dependencies: ["SwallowMacrosClient_Aggregation"]
-        ),
-        .target(
-            name: "ErrorX_PrecompiledProduct",
-            dependencies: ["ErrorX_Aggregation"]
-        ),
-        .target(
-            name: "MacroBuilder_PrecompiledProduct",
-            dependencies: ["MacroBuilder_Aggregation"]
-        ),
-        .target(
-            name: "SwiftSyntaxUtilities_PrecompiledProduct",
-            dependencies: ["SwiftSyntaxUtilities_Aggregation"]
         )
     ]
 )
