@@ -1,0 +1,4 @@
+module _RuntimeC {
+    header "_RuntimeC.h"
+    export *
+}
