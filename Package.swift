@@ -56,8 +56,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "_SwiftRuntimeExports",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/_SwiftRuntimeExports-dbb4580f5840dafc5db3cef851447c1a1b9727daa39368e052c42361c7261b4c.xcframework.zip",
-            checksum: "dbb4580f5840dafc5db3cef851447c1a1b9727daa39368e052c42361c7261b4c"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/_SwiftRuntimeExports-22b0bb6cb35164935621b9e83583fa5aa6852cd56985ad16abeab996620363d8.xcframework.zip",
+            checksum: "22b0bb6cb35164935621b9e83583fa5aa6852cd56985ad16abeab996620363d8"
         ),
         .target(
             name: "_PythonString_Aggregation",
@@ -66,8 +66,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "_PythonString",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/_PythonString-212baab6b47a6d1edbdd35db6169816de02228023a3f77d27c150b8a7e91e706.xcframework.zip",
-            checksum: "212baab6b47a6d1edbdd35db6169816de02228023a3f77d27c150b8a7e91e706"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/_PythonString-f27f952d653418e7605156ccb976282fe595f15f62793d873305481359327915.xcframework.zip",
+            checksum: "f27f952d653418e7605156ccb976282fe595f15f62793d873305481359327915"
         ),
         .target(
             name: "_SwallowSwiftOverlay_Aggregation",
@@ -76,7 +76,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "_SwallowSwiftOverlay",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/_SwallowSwiftOverlay-1b13a3ece4c487f070ff1bf499c58f3fc7412a18c49f7bf92a43cf917837e1d3.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/_SwallowSwiftOverlay-1b13a3ece4c487f070ff1bf499c58f3fc7412a18c49f7bf92a43cf917837e1d3.xcframework.zip",
             checksum: "1b13a3ece4c487f070ff1bf499c58f3fc7412a18c49f7bf92a43cf917837e1d3"
         ),
         .target(
@@ -86,8 +86,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "LoremIpsum",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/LoremIpsum-eccea25718630285366403cf7b9db035906091d026564ca79d96d7ff63192b09.xcframework.zip",
-            checksum: "eccea25718630285366403cf7b9db035906091d026564ca79d96d7ff63192b09"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/LoremIpsum-80575dfa16b5f08751613d52b983def4ed8ca7f30b42f412522a33f05d54240e.xcframework.zip",
+            checksum: "80575dfa16b5f08751613d52b983def4ed8ca7f30b42f412522a33f05d54240e"
         ),
         .target(
             name: "SE0270_RangeSet_Aggregation",
@@ -96,8 +96,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SE0270_RangeSet",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/SE0270_RangeSet-20acebec7ce849dc71114528e22a38cecd71c2f6d1475e1946b013ce5094338e.xcframework.zip",
-            checksum: "20acebec7ce849dc71114528e22a38cecd71c2f6d1475e1946b013ce5094338e"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/SE0270_RangeSet-2e41b551d27f9813493004459959adb7107c0c2da9bdbf27af7b167bd9ee2852.xcframework.zip",
+            checksum: "2e41b551d27f9813493004459959adb7107c0c2da9bdbf27af7b167bd9ee2852"
         ),
         .target(
             name: "Swallow_Aggregation",
@@ -106,8 +106,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Swallow",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/Swallow-40931ef2c57a0bb1b270c77b84d8d5bbb7be5e104fd6945d9e42d09bcbc69eea.xcframework.zip",
-            checksum: "40931ef2c57a0bb1b270c77b84d8d5bbb7be5e104fd6945d9e42d09bcbc69eea"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/Swallow-7ec68a7d127d302d909aa919ba179a6b00d16fb398663ee1a309cdbde7bb6826.xcframework.zip",
+            checksum: "7ec68a7d127d302d909aa919ba179a6b00d16fb398663ee1a309cdbde7bb6826"
         ),
         .target(
             name: "Compute_Aggregation",
@@ -116,8 +116,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Compute",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/Compute-c3f43f1a9195432bc236087637a579095ff1f4a4ff7412d3dcf047e1332f8c1b.xcframework.zip",
-            checksum: "c3f43f1a9195432bc236087637a579095ff1f4a4ff7412d3dcf047e1332f8c1b"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/Compute-426a0f647ebe91c152304cac0d46240b7caa67dc047028d1677bdc55f373a14b.xcframework.zip",
+            checksum: "426a0f647ebe91c152304cac0d46240b7caa67dc047028d1677bdc55f373a14b"
         ),
         .target(
             name: "CoreModel_Aggregation",
@@ -126,7 +126,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CoreModel",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/CoreModel-d7ac01d46ce1f25e00dcd9afd04b1cb414c1f8266b9ff88b5e79eba7c1de77d1.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/CoreModel-d7ac01d46ce1f25e00dcd9afd04b1cb414c1f8266b9ff88b5e79eba7c1de77d1.xcframework.zip",
             checksum: "d7ac01d46ce1f25e00dcd9afd04b1cb414c1f8266b9ff88b5e79eba7c1de77d1"
         ),
         .target(
@@ -136,7 +136,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ErrorX",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/ErrorX-d54c82b4e80b73f395ff478f8280fe7a2e64d63da715859a32c92c727ffde098.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/ErrorX-d54c82b4e80b73f395ff478f8280fe7a2e64d63da715859a32c92c727ffde098.xcframework.zip",
             checksum: "d54c82b4e80b73f395ff478f8280fe7a2e64d63da715859a32c92c727ffde098"
         ),
         .macro(
@@ -150,8 +150,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Diagnostics",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/Diagnostics-ed434676e36464ad6c8f47ed805dca689960111cab12739590e4a62723355378.xcframework.zip",
-            checksum: "ed434676e36464ad6c8f47ed805dca689960111cab12739590e4a62723355378"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/Diagnostics-5ccd809bc6f64fdabdc896f08105ab926d5c23dea7c738dd968107aa8658df74.xcframework.zip",
+            checksum: "5ccd809bc6f64fdabdc896f08105ab926d5c23dea7c738dd968107aa8658df74"
         ),
         .target(
             name: "FoundationX_Aggregation",
@@ -160,8 +160,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "FoundationX",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/FoundationX-acde832c547b6f87a6300bcd7fa8716a929cb2613593b5c871d4f3926834fa23.xcframework.zip",
-            checksum: "acde832c547b6f87a6300bcd7fa8716a929cb2613593b5c871d4f3926834fa23"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/FoundationX-c5ceb2237eda88fcb9687da026593e600fb5de5231c1de64187b423bb704f8e0.xcframework.zip",
+            checksum: "c5ceb2237eda88fcb9687da026593e600fb5de5231c1de64187b423bb704f8e0"
         ),
         .target(
             name: "POSIX_Aggregation",
@@ -170,12 +170,12 @@ let package = Package(
         ),
         .binaryTarget(
             name: "POSIX",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/POSIX-a665c92bf0e579208ec5a5ace3bf7b87f02e462b9f05ab65df43652d510a3848.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/POSIX-a665c92bf0e579208ec5a5ace3bf7b87f02e462b9f05ab65df43652d510a3848.xcframework.zip",
             checksum: "a665c92bf0e579208ec5a5ace3bf7b87f02e462b9f05ab65df43652d510a3848"
         ),
         .binaryTarget(
             name: "_RuntimeC",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/_RuntimeC-4e34d63ed9969595c2407a1320786a897309a998df09c694a0ab7915628e5368.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/_RuntimeC-4e34d63ed9969595c2407a1320786a897309a998df09c694a0ab7915628e5368.xcframework.zip",
             checksum: "4e34d63ed9969595c2407a1320786a897309a998df09c694a0ab7915628e5368"
         ),
         .target(
@@ -185,8 +185,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "_RuntimeKeyPath",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/_RuntimeKeyPath-f31469ca3b9e0bd0a06771b8fc67b55e3d8428036d0d350b3085b46c963cf25e.xcframework.zip",
-            checksum: "f31469ca3b9e0bd0a06771b8fc67b55e3d8428036d0d350b3085b46c963cf25e"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/_RuntimeKeyPath-dad583ed9ccdbb254543ff1e9bf41857363a1c439a36c3a52e54ab5e4d9af5ab.xcframework.zip",
+            checksum: "dad583ed9ccdbb254543ff1e9bf41857363a1c439a36c3a52e54ab5e4d9af5ab"
         ),
         .target(
             name: "Runtime_Aggregation",
@@ -195,7 +195,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "Runtime",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/Runtime-f0932427c1b0a880dc7bf8db7cef88ec00af1a8c94caa78b2eeca006d2769660.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/Runtime-f0932427c1b0a880dc7bf8db7cef88ec00af1a8c94caa78b2eeca006d2769660.xcframework.zip",
             checksum: "f0932427c1b0a880dc7bf8db7cef88ec00af1a8c94caa78b2eeca006d2769660"
         ),
         .macro(
@@ -209,8 +209,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SwallowMacrosClient",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/SwallowMacrosClient-f45571109efc1e4315e049d3f0d475e5567a0f95005a96560dfb77b6780ee0a4.xcframework.zip",
-            checksum: "f45571109efc1e4315e049d3f0d475e5567a0f95005a96560dfb77b6780ee0a4"
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/SwallowMacrosClient-08745ca5d0ec96f4a87aaa9698744c3aa764c2397ebfff5b9f16c377d3d8acba.xcframework.zip",
+            checksum: "08745ca5d0ec96f4a87aaa9698744c3aa764c2397ebfff5b9f16c377d3d8acba"
         ),
         .target(
             name: "MacroBuilder_Aggregation",
@@ -219,7 +219,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "MacroBuilder",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/MacroBuilder-f8f41e142d03976798e0b38308a3741c0343fd8fe0dea179ef4325e90132cc5d.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/MacroBuilder-f8f41e142d03976798e0b38308a3741c0343fd8fe0dea179ef4325e90132cc5d.xcframework.zip",
             checksum: "f8f41e142d03976798e0b38308a3741c0343fd8fe0dea179ef4325e90132cc5d"
         ),
         .target(
@@ -229,7 +229,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "SwiftSyntaxUtilities",
-            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2803a6ca7f6867fc5bb029b34769bed481a2b13c/SwiftSyntaxUtilities-a1d66826355d3a81a1d213e6b72dfe95e1e74ce5d5a2b9983ffecf6aa8d99663.xcframework.zip",
+            url: "https://github.com/swift-precompiled/Swallow/releases/download/master-2ee4c0198458c04e9cbda1f66ec65a425bbbf30c/SwiftSyntaxUtilities-a1d66826355d3a81a1d213e6b72dfe95e1e74ce5d5a2b9983ffecf6aa8d99663.xcframework.zip",
             checksum: "a1d66826355d3a81a1d213e6b72dfe95e1e74ce5d5a2b9983ffecf6aa8d99663"
         ),
         .target(
